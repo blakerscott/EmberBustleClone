@@ -1,0 +1,11 @@
+<h1>News</h1>
+
+<div class="container">
+  {{#each model as |article|}}
+    <div class="article">
+      <img src={{article.image}}>
+      <h3>{{article.title}}</h3>
+      <p>{{article.author}}</p>
+    </div>
+  {{/each}}
+</div>
